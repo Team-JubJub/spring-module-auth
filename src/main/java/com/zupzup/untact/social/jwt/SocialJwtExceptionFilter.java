@@ -21,7 +21,7 @@ public class SocialJwtExceptionFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         try {
-            filterChain.doFilter(request, response);    // SecurityConfig에서 CustomJwtAuthenticationFilter 이전에 이 필터를 등록, JwtAuthenticationFilter에서 발생하는 예외를 여기서 핸들링.
+            filterChain.doFilter(request, response);    // SecurityConfig에서 JwtAuthenticationFilter 이전에 이 필터를 등록, JwtAuthenticationFilter에서 발생하는 예외를 여기서 핸들링.
         } catch (RequiredHeaderNotExistException e) {
             response.setStatus(HttpStatus.BAD_REQUEST.value());
             response.getWriter().write(e.getMessage());
