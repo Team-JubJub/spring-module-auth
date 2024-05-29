@@ -1,9 +1,9 @@
 package com.zupzup.untact.social.jwt;
 
-import com.zupzup.untact.exception.exception.auth.BlackListTokenException;
-import com.zupzup.untact.exception.exception.auth.RefreshRequiredException;
-import com.zupzup.untact.exception.exception.auth.RequiredHeaderNotExistException;
-import com.zupzup.untact.exception.exception.auth.SignFailedException;
+import com.zupzup.untact.exception.auth.BlackListTokenException;
+import com.zupzup.untact.exception.auth.RefreshRequiredException;
+import com.zupzup.untact.exception.auth.RequiredHeaderNotExistException;
+import com.zupzup.untact.exception.auth.SignFailedException;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.security.SignatureException;

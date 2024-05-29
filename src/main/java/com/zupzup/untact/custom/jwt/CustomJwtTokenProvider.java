@@ -3,7 +3,7 @@ package com.zupzup.untact.custom.jwt;
 import com.zupzup.untact.custom.dto.LoginInfoDto;
 import com.zupzup.untact.custom.redis.CustomRedisService;
 import com.zupzup.untact.custom.service.CustomSellerDetailsService;
-import com.zupzup.untact.model.dto.auth.token.seller.SellerRefreshResultDto;
+import com.zupzup.untact.dto.auth.token.seller.SellerRefreshResultDto;
 import io.jsonwebtoken.*;
 import jakarta.annotation.PostConstruct;
 import jakarta.servlet.http.HttpServletRequest;
