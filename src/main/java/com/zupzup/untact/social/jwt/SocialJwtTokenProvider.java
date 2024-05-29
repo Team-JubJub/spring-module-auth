@@ -1,7 +1,7 @@
 package com.zupzup.untact.social.jwt;
 
-import com.zupzup.untact.exception.exception.auth.customer.AppleWithdrawException;
-import com.zupzup.untact.model.dto.auth.token.customer.CustomerRefreshResultDto;
+import com.zupzup.untact.exception.auth.customer.AppleWithdrawException;
+import com.zupzup.untact.dto.auth.token.customer.CustomerRefreshResultDto;
 import com.zupzup.untact.social.dto.LoginInfoDto;
 import com.zupzup.untact.social.redis.SocialRedisService;
 import com.zupzup.untact.social.service.CustomUserDetailsService;
